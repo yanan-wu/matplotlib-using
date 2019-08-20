@@ -24,7 +24,7 @@ def per_share():
     plt.legend()
     plt.xlabel('年份', fontproperties=font_set)
     plt.ylabel('基本每股收益(元)', fontproperties=font_set)
-    plt.savefig('D:/share.png')
+    plt.savefig('D:/share.png', dpi=200, bbox_inches='tight')
     plt.show()
 
 
@@ -43,8 +43,8 @@ def roe_pic():
     plt.title('华工科技历年 ROE 变化图', fontproperties=font_set)
     plt.legend()
     plt.xlabel('年份', fontproperties=font_set)
-    plt.ylabel('ROE', fontproperties=font_set)
-    plt.savefig('D:/roe.png')
+    plt.ylabel('ROE(%)', fontproperties=font_set)
+    plt.savefig('D:/roe.png', dpi=200, bbox_inches='tight')
     plt.show()
 
 
