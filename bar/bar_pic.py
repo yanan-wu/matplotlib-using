@@ -40,12 +40,11 @@ def roe_pic():
     plt.plot(range(9), y, color='red')
     plt.xticks(range(9), x, rotation=20)
 
-    plt.title('光迅科技历年 ROE 变化图', fontproperties=font_set)
+    plt.title('顺络电子历年 ROE 变化图', fontproperties=font_set)
     plt.legend()
     plt.xlabel('年份', fontproperties=font_set)
     plt.ylabel('ROE(%)', fontproperties=font_set)
     plt.savefig('D:/roe.png', dpi=200, bbox_inches='tight')
     plt.show()
-
 
 roe_pic()
