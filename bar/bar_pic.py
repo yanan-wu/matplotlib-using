@@ -33,14 +33,14 @@ def roe_pic():
     净资产收益率-年份柱状图
     :return:
     """
-    csv_data = pd.read_csv('../data/002281_data.csv', index_col=0, names=[1, 2, 3, 4, 5, 6, 7, 8, 9])
+    csv_data = pd.read_csv('../data/300414_data.csv', index_col=0, names=[1, 2, 3, 4, 5, 6, 7, 8, 9])
     x = csv_data.iloc[:1].values.tolist()[0][::-1]
     y = csv_data.iloc[1:2].values.tolist()[0][::-1]
-    plt.bar(range(9), y, width=0.5)
-    plt.plot(range(9), y, color='red')
-    plt.xticks(range(9), x, rotation=20)
+    plt.bar(range(8), y, width=0.5, color='green')
+    plt.plot(range(8), y, color='red')
+    plt.xticks(range(8), x, rotation=20)
 
-    plt.title('顺络电子历年 ROE 变化图', fontproperties=font_set)
+    plt.title('中光防雷历年 ROE 变化图', fontproperties=font_set)
     plt.legend()
     plt.xlabel('年份', fontproperties=font_set)
     plt.ylabel('ROE(%)', fontproperties=font_set)
